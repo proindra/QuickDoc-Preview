@@ -2,7 +2,7 @@
   "name": "quickdoc-preview",
   "displayName": "QuickDoc Preview",
   "description": "A modern PDF viewer for VS Code with enhanced features and seamless theme integration.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "proindra",
   "engines": {
     "vscode": "^1.46.0"
