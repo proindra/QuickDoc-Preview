@@ -1,0 +1,113 @@
+/* Base Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--vscode-editor-background);
+  color: var(--vscode-editor-foreground);
+  overflow: hidden;
+}
+
+/* Hide Scrollbars */
+::-webkit-scrollbar { display: none; }
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* PDF Viewer Container */
+#pdf-viewer {
+  display: block;
+  border: none;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Main Containers */
+#outerContainer { background-color: var(--vscode-editor-background) !important; }
+#viewerContainer { background-color: var(--vscode-editor-background) !important; }
+#sidebarContainer {
+  background-color: var(--vscode-sideBar-background) !important;
+  border-color: var(--vscode-panel-border) !important;
+}
+
+/* Toolbar Styles */
+.toolbar {
+  background-color: var(--vscode-sideBar-background) !important;
+  border-color: var(--vscode-panel-border) !important;
+}
+.secondaryToolbar { background-color: var(--vscode-sideBar-background) !important; }
+.findbar { background-color: var(--vscode-sideBar-background) !important; }
+
+/* Button Styles */
+.toolbarButton,
+.secondaryToolbarButton {
+  background-color: var(--vscode-button-secondaryBackground) !important;
+  color: var(--vscode-button-secondaryForeground) !important;
+}
+.toolbarButton:hover,
+.secondaryToolbarButton:hover {
+  background-color: var(--vscode-button-secondaryHoverBackground) !important;
+}
+.dialogButton {
+  background-color: var(--vscode-button-background) !important;
+  color: var(--vscode-button-foreground) !important;
+}
+.dialogButton:hover { background-color: var(--vscode-button-hoverBackground) !important; }
+
+/* Form Elements */
+.toolbarField {
+  background-color: var(--vscode-input-background) !important;
+  color: var(--vscode-input-foreground) !important;
+  border-color: var(--vscode-input-border) !important;
+}
+select {
+  background-color: var(--vscode-dropdown-background) !important;
+  color: var(--vscode-dropdown-foreground) !important;
+  border-color: var(--vscode-dropdown-border) !important;
+}
+
+/* Labels and Text */
+.toolbarLabel { color: var(--vscode-foreground) !important; }
+
+/* Separators */
+.splitToolbarButtonSeparator { background-color: var(--vscode-panel-border) !important; }
+
+/* Thumbnails */
+#thumbnailView { background-color: var(--vscode-sideBar-background) !important; }
+.thumbnail { border-color: var(--vscode-panel-border) !important; }
+.thumbnail.selected {
+  border-color: var(--vscode-focusBorder) !important;
+  background-color: var(--vscode-list-activeSelectionBackground) !important;
+}
+
+/* Dialogs */
+dialog {
+  background-color: var(--vscode-editorWidget-background) !important;
+  color: var(--vscode-editorWidget-foreground) !important;
+  border-color: var(--vscode-editorWidget-border) !important;
+}
+
+/* Door Hangers */
+.doorHanger::before,
+.doorHanger::after { border-bottom-color: var(--vscode-sideBar-background) !important; }
+
+/* Custom Buttons */
+#openInBrowser,
+#resetZoom,
+#fitWidth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+}
+#openInBrowser svg,
+#resetZoom svg,
+#fitWidth svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}

@@ -1,20 +1,20 @@
 {
-  "name": "pdf",
-  "displayName": "vscode-pdf",
-  "description": "Display pdf file in VSCode.",
+  "name": "quickdoc-preview",
+  "displayName": "QuickDoc Preview",
+  "description": "A modern PDF viewer for VS Code with enhanced features and seamless theme integration.",
   "version": "1.0.0",
   "publisher": "proindra",
   "engines": {
     "vscode": "^1.46.0"
   },
   "categories": [
-    "Programming Languages"
+    "Other"
   ],
   "keywords": [
     "pdf",
     "viewer"
   ],
-  "icon": "vscode-pdf.png",
+  "icon": "assets/quickdoc-preview.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/proindra/QuickDoc-Preview.git"

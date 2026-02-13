@@ -109,7 +109,7 @@ export class PdfPreview extends Disposable {
 
     const config = vscode.workspace.getConfiguration('pdf-preview');
     const settings = {
-      cMapUrl: resolveAsUri('lib', 'web', 'cmaps/').toString(),
+      cMapUrl: resolveAsUri('resources', 'cmaps/').toString(),
       path: docPath.toString(),
       defaults: {
         cursor: config.get('default.cursor') as string,
@@ -133,17 +133,16 @@ export class PdfPreview extends Disposable {
     )}">
 <title>PDF.js viewer</title>
 <link rel="resource" type="application/l10n" href="${resolveAsUri(
-      'lib',
-      'web',
+      'resources',
       'locale',
       'locale.properties'
     )}">
-<link rel="stylesheet" href="${resolveAsUri('lib', 'web', 'viewer.css')}">
-<link rel="stylesheet" href="${resolveAsUri('lib', 'pdf.css')}">
-<script src="${resolveAsUri('lib', 'build', 'pdf.js')}"></script>
-<script src="${resolveAsUri('lib', 'build', 'pdf.worker.js')}"></script>
-<script src="${resolveAsUri('lib', 'web', 'viewer.js')}"></script>
-<script src="${resolveAsUri('lib', 'main.js')}"></script>
+<link rel="stylesheet" href="${resolveAsUri('build', 'viewer.css')}">
+<link rel="stylesheet" href="${resolveAsUri('build', 'pdf.css')}">
+<script src="${resolveAsUri('build', 'pdf.js')}"></script>
+<script src="${resolveAsUri('build', 'pdf.worker.js')}"></script>
+<script src="${resolveAsUri('build', 'viewer.js')}"></script>
+<script src="${resolveAsUri('build', 'main.js')}"></script>
 <script>
   window.addEventListener('DOMContentLoaded', () => {
     const vscode = acquireVsCodeApi();
