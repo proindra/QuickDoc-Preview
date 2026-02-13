@@ -2,6 +2,13 @@
 
 All notable changes to the "QuickDoc Preview" extension will be documented in this file.
 
+## [2.0.1] - 2025
+
+### Fixed
+- Fixed dependencies configuration to ensure proper package installation
+- Moved @types/vscode to devDependencies
+- Resolved loading issues on fresh installations
+
 ## [2.0.0] - 2025
 
 ### Added
