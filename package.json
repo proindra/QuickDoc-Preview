@@ -1,18 +1,31 @@
 {
   "name": "quickdoc-preview",
   "displayName": "QuickDoc Preview",
-  "description": "A modern PDF viewer for VS Code with enhanced features and seamless theme integration.",
-  "version": "1.0.1",
+  "description": "A comprehensive document viewer extension for Visual Studio Code supporting PDF, DOCX, and ODT files with enhanced features and seamless theme integration.",
+  "version": "2.0.0",
   "publisher": "proindra",
   "engines": {
     "vscode": "^1.46.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Formatters",
+    "Visualization"
   ],
   "keywords": [
     "pdf",
-    "viewer"
+    "pdf viewer",
+    "docx",
+    "docx viewer",
+    "odt",
+    "odt viewer",
+    "document",
+    "document viewer",
+    "word",
+    "microsoft word",
+    "opendocument",
+    "preview",
+    "reader"
   ],
   "icon": "assets/quickdoc-preview.png",
   "repository": {
@@ -23,7 +36,8 @@
     "url": "https://github.com/proindra/QuickDoc-Preview/issues"
   },
   "activationEvents": [
-    "onCustomEditor:pdf.preview"
+    "onCustomEditor:pdf.preview",
+    "onCustomEditor:quickdoc.docxEditor"
   ],
   "main": "./out/src/extension",
   "contributes": {
@@ -41,8 +55,87 @@
             "filenamePattern": "*.pdf"
           }
         ]
+      },
+      {
+        "viewType": "quickdoc.docxEditor",
+        "displayName": "QuickDoc Document Viewer",
+        "priority": "default",
+        "selector": [
+          {
+            "filenamePattern": "*.docx"
+          },
+          {
+            "filenamePattern": "*.odt"
+          }
+        ]
       }
     ],
+    "commands": [
+      {
+        "command": "quickdoc.zoomIn",
+        "title": "Zoom In",
+        "icon": "$(zoom-in)"
+      },
+      {
+        "command": "quickdoc.zoomOut",
+        "title": "Zoom Out",
+        "icon": "$(zoom-out)"
+      },
+      {
+        "command": "quickdoc.resetZoom",
+        "title": "Reset Zoom",
+        "icon": "$(zoom-reset)"
+      },
+      {
+        "command": "quickdoc.toggleOutline",
+        "title": "Toggle Outline",
+        "icon": "$(list-tree)"
+      },
+      {
+        "command": "quickdoc.toggleTheme",
+        "title": "Toggle Theme",
+        "icon": "$(color-mode)"
+      },
+      {
+        "command": "quickdoc.toggleToolbar",
+        "title": "Toggle Toolbar",
+        "icon": "$(toolbar)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "quickdoc.zoomIn",
+          "when": "activeCustomEditorId == quickdoc.docxEditor",
+          "group": "navigation@1"
+        },
+        {
+          "command": "quickdoc.zoomOut",
+          "when": "activeCustomEditorId == quickdoc.docxEditor",
+          "group": "navigation@2"
+        },
+        {
+          "command": "quickdoc.resetZoom",
+          "when": "activeCustomEditorId == quickdoc.docxEditor",
+          "group": "navigation@3"
+        },
+        {
+          "command": "quickdoc.toggleOutline",
+          "when": "activeCustomEditorId == quickdoc.docxEditor",
+          "group": "navigation@4"
+        },
+        {
+          "command": "quickdoc.toggleTheme",
+          "when": "activeCustomEditorId == quickdoc.docxEditor",
+          "group": "navigation@5"
+        },
+        {
+          "command": "quickdoc.toggleToolbar",
+          "when": "activeCustomEditorId == quickdoc.docxEditor",
+          "group": "navigation@6"
+        }
+      ]
+    },
     "configuration": {
       "type": "object",
       "title": "PDF Preview",
@@ -86,6 +179,33 @@
             "odd",
             "even"
           ]
+        },
+        "quickdoc.font": {
+          "type": "string",
+          "default": "Arial",
+          "description": "Font family for DOCX/ODT document rendering"
+        },
+        "quickdoc.theme": {
+          "type": "string",
+          "default": "auto",
+          "enum": [
+            "auto",
+            "light",
+            "dark"
+          ],
+          "description": "Theme for DOCX/ODT document viewer"
+        },
+        "quickdoc.zoomLevel": {
+          "type": "number",
+          "default": 1,
+          "minimum": 0.5,
+          "maximum": 3,
+          "description": "Default zoom level for DOCX/ODT documents"
+        },
+        "quickdoc.showOutline": {
+          "type": "boolean",
+          "default": false,
+          "description": "Show document outline/table of contents for DOCX/ODT"
         }
       }
     }
@@ -100,7 +220,9 @@
     "package": "vsce package"
   },
   "dependencies": {
-    "@types/vscode": "^1.46.0"
+    "@types/vscode": "^1.46.0",
+    "mammoth": "^1.8.1",
+    "odt2html": "^1.0.1"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.1",

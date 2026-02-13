@@ -5,4 +5,10 @@ test/**
 src/**
 **/*.map
 .gitignore
+.editorconfig
+.eslintignore
+.eslintrc.json
 tsconfig.json
+INTEGRATION_SUMMARY.md
+*.vsix
+node_modules/**
