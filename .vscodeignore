@@ -11,4 +11,9 @@ src/**
 tsconfig.json
 INTEGRATION_SUMMARY.md
 *.vsix
-node_modules/**
+CONTRIBUTING.md
+node_modules/**/@types/**
+node_modules/**/test/**
+node_modules/**/tests/**
+node_modules/**/*.md
+node_modules/**/.github/**

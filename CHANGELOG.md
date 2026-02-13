@@ -2,6 +2,13 @@
 
 All notable changes to the "QuickDoc Preview" extension will be documented in this file.
 
+## [2.0.2] - 2025
+
+### Fixed
+- Fixed .vscodeignore to include runtime dependencies (mammoth, odt2html)
+- Resolved issue where documents would only show loading screen
+- Ensured node_modules are properly packaged with extension
+
 ## [2.0.1] - 2025
 
 ### Fixed
