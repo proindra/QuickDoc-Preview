@@ -2,6 +2,14 @@
 
 All notable changes to the "QuickDoc Preview" extension will be documented in this file.
 
+## [2.0.8] - 2025
+
+### Fixed
+- Toolbar now exactly matches PDF viewer colors
+- Uses same CSS variables as PDF viewer
+- Uses prefers-color-scheme media query for theme detection
+- Perfect consistency between PDF and DOCX viewers
+
 ## [2.0.7] - 2025
 
 ### Changed
