@@ -2,6 +2,12 @@
 
 All notable changes to the "QuickDoc Preview" extension will be documented in this file.
 
+## [2.0.9] - 2025
+
+### Fixed
+- PDF search result count now visible
+- Added proper text color for findResultsCount and findMsg
+
 ## [2.0.8] - 2025
 
 ### Fixed

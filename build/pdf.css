@@ -42,6 +42,12 @@ html, body {
 .secondaryToolbar { background-color: var(--vscode-sideBar-background) !important; }
 .findbar { background-color: var(--vscode-sideBar-background) !important; }
 
+/* Find Results */
+#findResultsCount,
+#findMsg {
+  color: var(--vscode-foreground) !important;
+}
+
 /* Button Styles */
 .toolbarButton,
 .secondaryToolbarButton {
