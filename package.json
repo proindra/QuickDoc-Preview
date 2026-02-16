@@ -2,7 +2,7 @@
   "name": "quickdoc-preview",
   "displayName": "QuickDoc Preview",
   "description": "A comprehensive document viewer extension for Visual Studio Code supporting PDF, DOCX, and ODT files with enhanced features and seamless theme integration.",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "publisher": "proindra",
   "engines": {
     "vscode": "^1.46.0"
