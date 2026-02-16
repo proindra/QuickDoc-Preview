@@ -2,6 +2,13 @@
 
 All notable changes to the "QuickDoc Preview" extension will be documented in this file.
 
+## [2.0.6] - 2025
+
+### Changed
+- Simplified theme toggle to only 2 modes: Light and Dark
+- Removed auto mode for cleaner UX
+- One click to switch between light and dark document themes
+
 ## [2.0.5] - 2025
 
 ### Changed
