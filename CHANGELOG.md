@@ -2,6 +2,13 @@
 
 All notable changes to the "QuickDoc Preview" extension will be documented in this file.
 
+## [2.0.5] - 2025
+
+### Changed
+- Toolbar now stays in dark mode regardless of document theme
+- Consistent dark toolbar for both light and dark document modes
+- Better visual separation between toolbar and document
+
 ## [2.0.4] - 2025
 
 ### Changed
