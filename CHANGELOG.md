@@ -2,6 +2,15 @@
 
 All notable changes to the "QuickDoc Preview" extension will be documented in this file.
 
+## [2.0.4] - 2025
+
+### Changed
+- Redesigned DOCX/ODT toolbar to match PDF viewer design
+- Cleaner, more professional toolbar with icon-based buttons
+- Improved button spacing and separators
+- Better visual consistency across viewers
+- Enhanced toolbar styling with proper hover states
+
 ## [2.0.3] - 2025
 
 ### Fixed
