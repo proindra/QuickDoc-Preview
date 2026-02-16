@@ -2,6 +2,16 @@
 
 All notable changes to the "QuickDoc Preview" extension will be documented in this file.
 
+## [2.0.13] - 2025
+
+### Changed
+- Updated extension icon
+
+## [2.0.12] - 2025
+
+### Changed
+- Minor improvements and bug fixes
+
 ## [2.0.11] - 2025
 
 ### Changed
