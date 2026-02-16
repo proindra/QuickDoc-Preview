@@ -10,14 +10,13 @@ A comprehensive document viewer extension for Visual Studio Code supporting PDF,
 - **ODT Support** - View OpenDocument Text files (.odt)
 
 ### 🎨 Advanced Document Viewer (DOCX/ODT)
-- **VSCode Theme Integration** - Automatically adapts to your current VSCode theme colors
-- **Theme Switching** - Manual override with Auto, Light, and Dark themes
+- **VSCode Theme Integration** - Toolbar adapts to your VSCode theme
+- **Theme Switching** - Toggle between Light and Dark document themes
 - **Zoom Controls** - Zoom in/out with toolbar buttons or keyboard shortcuts (Ctrl +/-)
 - **Document Outline** - Navigate through headings with interactive outline panel
 - **Search Functionality** - Find text within documents (Ctrl+F)
-- **Diff View** - Compare two versions of the same document side-by-side
-- **Scroll Sync** - Synchronized scrolling in diff view
 - **Status Bar** - Shows current zoom level
+- **Clean UI** - Modern, minimalist interface matching PDF viewer design
 
 ### 🎯 PDF Viewer Features
 - **Reset Zoom (R)** - Quickly reset to 100% zoom
@@ -32,10 +31,11 @@ Simply open any `.pdf` file in VSCode and it will automatically open in the Quic
 
 ### DOCX/ODT Files
 Open any `.docx` or `.odt` file in VSCode. The document will render with:
-- Interactive toolbar at the top-right
+- Interactive toolbar at the top
 - Optional outline panel on the left
 - Searchable content
 - Zoom controls
+- Light mode by default (toggle to dark mode available)
 
 ## 🎮 Keyboard Shortcuts (DOCX/ODT)
 
@@ -43,18 +43,16 @@ Open any `.docx` or `.odt` file in VSCode. The document will render with:
 - **Ctrl/Cmd + Minus** - Zoom out
 - **Ctrl/Cmd + 0** - Reset zoom to 100%
 - **Ctrl/Cmd + F** - Open search panel
-- **Ctrl/Cmd + H** - Toggle toolbar
 - **Esc** - Close search panel
 
 ## 🎨 Toolbar Buttons (DOCX/ODT)
 
-- **🔍-** - Zoom out
-- **🔍+** - Zoom in
-- **⚊** - Reset zoom
 - **◧/◨** - Toggle outline panel
-- **🔄/☀️/🌙** - Cycle through themes (Auto/Light/Dark)
 - **🔍** - Open search
-- **✕** - Hide toolbar
+- **−** - Zoom out
+- **+** - Zoom in
+- **⚊** - Reset zoom to 100%
+- **☀️/🌙** - Toggle between Light/Dark theme
 
 ## 📦 Installation
 
@@ -74,21 +72,25 @@ Open any `.docx` or `.odt` file in VSCode. The document will render with:
 
 ### DOCX/ODT Settings
 - `quickdoc.font` - Font family for document rendering (default: Arial)
-- `quickdoc.theme` - Theme for document viewer (auto/light/dark)
-- `quickdoc.zoomLevel` - Default zoom level (0.5 to 3.0)
-- `quickdoc.showOutline` - Show document outline on load (default: true)
+- `quickdoc.theme` - Theme for document viewer (light/dark, default: light)
+- `quickdoc.zoomLevel` - Default zoom level (0.5 to 3.0, default: 1.0)
+- `quickdoc.showOutline` - Show document outline on load (default: false)
 
 ## 🔥 What's New in v2.0
 
+### Document Support
 - ✅ Added DOCX file support
 - ✅ Added ODT file support
 - ✅ Interactive document outline/table of contents
 - ✅ Advanced zoom controls with status bar
-- ✅ Theme switching (Auto/Light/Dark)
+- ✅ Theme switching (Light/Dark)
 - ✅ In-document search functionality
-- ✅ Diff view for comparing document versions
 - ✅ Keyboard shortcuts for common actions
-- ✅ Collapsible toolbar
+
+### UI Improvements
+- ✅ Toolbar matches VSCode theme colors
+- ✅ PDF-style toolbar design for consistency
+- ✅ Light mode default for better readability
 
 ## 👨‍💻 Author
 
