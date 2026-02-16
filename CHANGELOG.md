@@ -2,6 +2,13 @@
 
 All notable changes to the "QuickDoc Preview" extension will be documented in this file.
 
+## [2.0.10] - 2025
+
+### Fixed
+- PDF search result count now has proper background color
+- Added padding and border-radius for better visibility
+- Text now clearly visible against white background
+
 ## [2.0.9] - 2025
 
 ### Fixed
