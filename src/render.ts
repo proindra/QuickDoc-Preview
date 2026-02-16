@@ -6,7 +6,7 @@ import { OdtHandler } from './odt_handler';
 export class DocumentRenderer {
   private static currentZoom = 1.0;
   private static outlineVisible = false;
-  private static currentTheme = 'auto';
+  private static currentTheme = 'light';
   private static toolbarVisible = true;
 
   public static async renderDocument(
@@ -19,7 +19,7 @@ export class DocumentRenderer {
 
       const config = vscode.workspace.getConfiguration('quickdoc');
       const font = config.get('font', 'Arial');
-      const theme = config.get('theme', 'auto');
+      const theme = config.get('theme', 'light');
       this.currentZoom = config.get('zoomLevel', 1.0);
       this.outlineVisible = config.get('showOutline', false);
       this.currentTheme = theme;

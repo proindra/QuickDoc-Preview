@@ -2,6 +2,12 @@
 
 All notable changes to the "QuickDoc Preview" extension will be documented in this file.
 
+## [2.0.11] - 2025
+
+### Changed
+- Default DOCX/ODT viewer theme changed to Light mode
+- Users can still switch to Dark mode using theme toggle button
+
 ## [2.0.10] - 2025
 
 ### Fixed
