@@ -2,6 +2,14 @@
 
 All notable changes to the "QuickDoc Preview" extension will be documented in this file.
 
+## [2.0.7] - 2025
+
+### Changed
+- Toolbar now matches VSCode theme colors (like PDF viewer)
+- Adapts to light/dark VSCode themes automatically
+- Uses VSCode color variables for consistent look
+- Better integration with VSCode UI
+
 ## [2.0.6] - 2025
 
 ### Changed
